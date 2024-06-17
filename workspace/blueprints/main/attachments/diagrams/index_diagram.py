@@ -1,7 +1,7 @@
 from flask import Blueprint
 from workspace.blueprints.main.attachments.endpoints.graphOfIndexEndpoint import AttachmentOfBlueprints_IndexEndpointGraph
 
-class Main_Entry_Diagram():
+class AttachmentOfBlueprints_IndexDiagram():
     
     @property
     def progress(self) -> Blueprint:

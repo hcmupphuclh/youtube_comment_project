@@ -1,5 +1,5 @@
 from flask import Flask
-from workspace.blueprints.main.diagram import Main_Entry_Diagram
+from workspace.blueprints.main.attachments.diagrams.index_diagram import AttachmentOfBlueprints_IndexDiagram
 
 class Process():
     
@@ -14,7 +14,7 @@ class Process():
     def __init__(self) -> None:
         self.process = Flask(__name__)
         
-        main = Main_Entry_Diagram()
+        main = AttachmentOfBlueprints_IndexDiagram()
         self.process.register_blueprint(main.progress)
         
     def run(self, *args, **kwargs):
