@@ -1,7 +1,7 @@
 from flask import Blueprint
-from workspace.blueprints.main.attachments.endpoints.index_attachment import AttachmentOfIndex_Endpoints
+from workspace.blueprints.main.attachments.endpoints.graphOfIndexEndpoint import AttachmentOfBlueprints_IndexEndpointGraph
 
-class ProgressOfMain():
+class Main_Entry_Diagram():
     
     @property
     def progress(self) -> Blueprint:
@@ -22,5 +22,5 @@ class ProgressOfMain():
         self.register_endpoints()
         
     def register_endpoints(self):
-        indexAttachments = AttachmentOfIndex_Endpoints(self)
-        indexAttachments.endpointRegisteration()
+        indexEndpointGraph = AttachmentOfBlueprints_IndexEndpointGraph(self)
+        indexEndpointGraph.endpointRegisteration()
